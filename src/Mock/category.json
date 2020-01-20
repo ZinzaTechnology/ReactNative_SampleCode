@@ -1,0 +1,79 @@
+{
+    "body": 
+    {
+        "content": [
+            {
+                "id": 1,
+                "name": "Truyện ngắn",
+                "about": "Truyện ngắn"
+            },
+            {
+                "id": 2,
+                "name": "Tiểu Thuyết",
+                "about": "Tiểu thuyết là một thể loại văn xuôi có hư cấu, thông qua nhân vật, hoàn cảnh, sự việc để phản ánh bức tranh xã hội rộng lớn và những vấn đề của cuộc sống con người, biểu hiện tính chất tường thuật, tính chất kể chuyện bằng ngôn ngữ văn xuôi theo những chủ đề xác định"
+            },
+            {
+                "id": 3,
+                "name": "Văn học Việt Nam",
+                "about": "Văn học Việt Nam"
+            },
+           
+            {
+                "id": 4,
+                "name": "Văn học nước ngoài",
+                "about": "Văn học nước ngoài"
+            },
+            {
+                "id": 5,
+                "name": "Văn học cổ điển",
+                "about": "Văn học cổ điển"
+            },
+            {
+                "id": 6,
+                "name": "Truyện cổ tích",
+                "about": "Truyện cổ tích"
+            },
+            {
+                "id": 7,
+                "name": "Sách thiếu nhi",
+                "about": "Sách thiếu nhi"
+            },
+            {
+                "id": 8,
+                "name": "Sách kỹ năng sống",
+                "about": "Sách kỹ năng sống"
+            },
+            {
+                "id": 9,
+                "name": "Sách lịch sử",
+                "about": "Sách lịch sử"
+            },
+            {
+                "id": 10,
+                "name": "Khác",
+                "about": "Khác"
+            }
+        ],
+        "first": true,
+        "last": true,
+        "number": 0,
+        "numberOfElements": 0,
+        "pageable": {
+            "pageNumber": 0,
+            "pageSize": 20,
+            "paged": true,
+            "sort": {
+                "sorted": true,
+                "unsorted": true
+            },
+            "unpaged": true
+        },
+        "size": 0,
+        "sort": {
+            "sorted": true,
+            "unsorted": true
+        },
+        "totalElements": 0,
+        "totalPages": 0
+    }
+}

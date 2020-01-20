@@ -1,0 +1,574 @@
+{
+    "body":
+    {
+        "content": [
+            {
+                "bookId": 1,
+                "title": "Lão Hạc",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Cậu Vàng đi đời rồi ông Giáo ạ, 5000 đô!",
+                                "duration": "00:12:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 3,
+                "title": "Vì tình yêu phù phiếm",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 1",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Vì yêu mà ta biết đau",
+                                "duration": "00:12:14"
+                            },
+                            {
+                                "comment": "Sự cảm thông sau sắc",
+                                "duration": "00:46:14"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 2",
+                        "chapterId": 2,
+                        "index": 2,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Quá khứ là quá khứ",
+                                "duration": "01:46:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 1,
+                "title": "Lão Hạc",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Cậu Vàng đi đời rồi ông Giáo ạ, 5000 đô!",
+                                "duration": "00:12:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 3,
+                "title": "Vì tình yêu phù phiếm",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 1",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Vì yêu mà ta biết đau",
+                                "duration": "00:12:14"
+                            },
+                            {
+                                "comment": "Sự cảm thông sau sắc",
+                                "duration": "00:46:14"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 2",
+                        "chapterId": 2,
+                        "index": 2,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Quá khứ là quá khứ",
+                                "duration": "01:46:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 1,
+                "title": "Lão Hạc",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Cậu Vàng đi đời rồi ông Giáo ạ, 5000 đô!",
+                                "duration": "00:12:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 3,
+                "title": "Vì tình yêu phù phiếm",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 1",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Vì yêu mà ta biết đau",
+                                "duration": "00:12:14"
+                            },
+                            {
+                                "comment": "Sự cảm thông sau sắc",
+                                "duration": "00:46:14"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 2",
+                        "chapterId": 2,
+                        "index": 2,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Quá khứ là quá khứ",
+                                "duration": "01:46:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 1,
+                "title": "Lão Hạc",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Cậu Vàng đi đời rồi ông Giáo ạ, 5000 đô!",
+                                "duration": "00:12:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 3,
+                "title": "Vì tình yêu phù phiếm",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 1",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Vì yêu mà ta biết đau",
+                                "duration": "00:12:14"
+                            },
+                            {
+                                "comment": "Sự cảm thông sau sắc",
+                                "duration": "00:46:14"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 2",
+                        "chapterId": 2,
+                        "index": 2,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Quá khứ là quá khứ",
+                                "duration": "01:46:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 1,
+                "title": "Lão Hạc",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Cậu Vàng đi đời rồi ông Giáo ạ, 5000 đô!",
+                                "duration": "00:12:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 3,
+                "title": "Vì tình yêu phù phiếm",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 1",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Vì yêu mà ta biết đau",
+                                "duration": "00:12:14"
+                            },
+                            {
+                                "comment": "Sự cảm thông sau sắc",
+                                "duration": "00:46:14"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 2",
+                        "chapterId": 2,
+                        "index": 2,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Quá khứ là quá khứ",
+                                "duration": "01:46:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 1,
+                "title": "Lão Hạc",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Cậu Vàng đi đời rồi ông Giáo ạ, 5000 đô!",
+                                "duration": "00:12:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 3,
+                "title": "Vì tình yêu phù phiếm",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 1",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Vì yêu mà ta biết đau",
+                                "duration": "00:12:14"
+                            },
+                            {
+                                "comment": "Sự cảm thông sau sắc",
+                                "duration": "00:46:14"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 2",
+                        "chapterId": 2,
+                        "index": 2,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Quá khứ là quá khứ",
+                                "duration": "01:46:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 1,
+                "title": "Lão Hạc",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Cậu Vàng đi đời rồi ông Giáo ạ, 5000 đô!",
+                                "duration": "00:12:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 3,
+                "title": "Vì tình yêu phù phiếm",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 1",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Vì yêu mà ta biết đau",
+                                "duration": "00:12:14"
+                            },
+                            {
+                                "comment": "Sự cảm thông sau sắc",
+                                "duration": "00:46:14"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 2",
+                        "chapterId": 2,
+                        "index": 2,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Quá khứ là quá khứ",
+                                "duration": "01:46:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 1,
+                "title": "Lão Hạc",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Cậu Vàng đi đời rồi ông Giáo ạ, 5000 đô!",
+                                "duration": "00:12:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 3,
+                "title": "Vì tình yêu phù phiếm",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 1",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Vì yêu mà ta biết đau",
+                                "duration": "00:12:14"
+                            },
+                            {
+                                "comment": "Sự cảm thông sau sắc",
+                                "duration": "00:46:14"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 2",
+                        "chapterId": 2,
+                        "index": 2,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Quá khứ là quá khứ",
+                                "duration": "01:46:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 1,
+                "title": "Lão Hạc",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Cậu Vàng đi đời rồi ông Giáo ạ, 5000 đô!",
+                                "duration": "00:12:14"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "bookId": 3,
+                "title": "Vì tình yêu phù phiếm",
+                "avatar": "https://salt.tikicdn.com/cache/550x550/ts/product/5d/a4/32/480b955b8d91cb94bb041af599e1e217.jpg",
+                "lstBookmark": [
+                    {
+                        "id": 1,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 1",
+                        "chapterId": 10,
+                        "index": 1,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Vì yêu mà ta biết đau",
+                                "duration": "00:12:14"
+                            },
+                            {
+                                "comment": "Sự cảm thông sau sắc",
+                                "duration": "00:46:14"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "comment": "Quá hấp dẫn",
+                        "chapterName": "Vì Tình Yêu Phù Phiếm 2",
+                        "chapterId": 2,
+                        "index": 2,
+                        "created": "2019-10-09 08:44:23",
+                        "modified": "2019-10-09 08:44:22",
+                        "detail": [
+                            {
+                                "comment": "Quá khứ là quá khứ",
+                                "duration": "01:46:14"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
