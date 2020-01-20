@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://react-native-kit.github.io/react-native-track-player/documentation/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Documentation | react-native-track-player</title>
+<meta name="generator" content="Jekyll v3.8.5">
+<meta property="og:title" content="Documentation">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="A fully fledged audio module created for music apps. Provides audio playback, external media controls, chromecast support, background mode and more!">
+<meta property="og:description" content="A fully fledged audio module created for music apps. Provides audio playback, external media controls, chromecast support, background mode and more!">
+<link rel="canonical" href="https://react-native-kit.github.io/react-native-track-player/documentation/">
+<meta property="og:url" content="https://react-native-kit.github.io/react-native-track-player/documentation/">
+<meta property="og:site_name" content="react-native-track-player">
+<script type="application/ld+json">
+{"@type":"WebPage","url":"https://react-native-kit.github.io/react-native-track-player/documentation/","headline":"Documentation","description":"A fully fledged audio module created for music apps. Provides audio playback, external media controls, chromecast support, background mode and more!","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <style class="anchorjs"></style><link rel="stylesheet" href="./Documentation _ react-native-track-player_files/style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div>
+                <a href="https://react-native-kit.github.io/react-native-track-player/">react-native-track-player</a>
+                <ul>
+                    
+                        
+                            <li><a href="https://react-native-kit.github.io/react-native-track-player/install/">Installation</a></li>
+                        
+                    
+                        
+                            <li><a href="https://react-native-kit.github.io/react-native-track-player/api/">Getting Started</a></li>
+                        
+                    
+                        
+                            <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/">Documentation</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li><a href="https://github.com/react-native-kit/react-native-track-player">GitHub</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+        <section>
+            <h1>Documentation</h1>
+            <h2 id="summary">Summary<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#summary" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<ul>
+  <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#constants">Constants</a>
+    <ul>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#state">State</a></li>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating">Rating</a></li>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability">Capability</a></li>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#pitch-algorithm">Pitch Algorithm</a></li>
+    </ul>
+  </li>
+  <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#functions">Functions</a>
+    <ul>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#lifecycle-functions">Lifecycle</a></li>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#queue-functions">Queue</a></li>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#player-functions">Player</a></li>
+    </ul>
+  </li>
+  <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#events">Events</a>
+    <ul>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#media-controls">Media Controls</a></li>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#player">Player</a></li>
+    </ul>
+  </li>
+  <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#components">Components</a>
+    <ul>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#progresscomponent">ProgressComponent</a></li>
+    </ul>
+  </li>
+  <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#objects">Objects</a>
+    <ul>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#track-object">Track Object</a></li>
+      <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="constants">Constants<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#constants" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<h3 id="state">State<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#state" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<h4 id="state_none"><code class="highlighter-rouge">STATE_NONE</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#state_none" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>State indicating that no media is currently loaded</p>
+<h4 id="state_ready"><code class="highlighter-rouge">STATE_READY</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#state_ready" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>State indicating that the player is ready to start playing</p>
+<h4 id="state_playing"><code class="highlighter-rouge">STATE_PLAYING</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#state_playing" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>State indicating that the player is currently playing</p>
+<h4 id="state_paused"><code class="highlighter-rouge">STATE_PAUSED</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#state_paused" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>State indicating that the player is currently paused</p>
+<h4 id="state_stopped"><code class="highlighter-rouge">STATE_STOPPED</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#state_stopped" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>State indicating that the player is currently stopped</p>
+<h4 id="state_buffering"><code class="highlighter-rouge">STATE_BUFFERING</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#state_buffering" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>State indicating that the player is currently buffering (in “play” state)</p>
+<h4 id="state_connecting"><code class="highlighter-rouge">STATE_CONNECTING</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#state_connecting" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>State indicating that the player is currently buffering (in “pause” state)</p>
+
+<h3 id="rating">Rating<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<h4 id="rating_heart"><code class="highlighter-rouge">RATING_HEART</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating_heart" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Rating type indicating “with heart” or “without heart”, its value is a <code class="highlighter-rouge">boolean</code>.</p>
+<h4 id="rating_thumbs_up_down"><code class="highlighter-rouge">RATING_THUMBS_UP_DOWN</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating_thumbs_up_down" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Rating type indicating “thumbs up” or “thumbs down”, its value is a <code class="highlighter-rouge">boolean</code>.</p>
+<h4 id="rating_3_stars"><code class="highlighter-rouge">RATING_3_STARS</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating_3_stars" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Rating type indicating 0 to 3 stars, its value is a <code class="highlighter-rouge">number</code> of stars.</p>
+<h4 id="rating_4_stars"><code class="highlighter-rouge">RATING_4_STARS</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating_4_stars" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Rating type indicating 0 to 4 stars, its value is a <code class="highlighter-rouge">number</code> of stars.</p>
+<h4 id="rating_5_stars"><code class="highlighter-rouge">RATING_5_STARS</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating_5_stars" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Rating type indicating 0 to 5 stars, its value is a <code class="highlighter-rouge">number</code> of stars.</p>
+<h4 id="rating_percentage"><code class="highlighter-rouge">RATING_PERCENTAGE</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating_percentage" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Rating type indicating percentage, its value is a <code class="highlighter-rouge">number</code>.</p>
+
+<h3 id="capability">Capability<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<h4 id="capability_play"><code class="highlighter-rouge">CAPABILITY_PLAY</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_play" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to play</p>
+<h4 id="capability_play_from_id"><code class="highlighter-rouge">CAPABILITY_PLAY_FROM_ID</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_play_from_id" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to play from a track id (Required for Android Auto)</p>
+<h4 id="capability_play_from_search"><code class="highlighter-rouge">CAPABILITY_PLAY_FROM_SEARCH</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_play_from_search" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to play from a text/voice search (Required for Android Auto)</p>
+<h4 id="capability_pause"><code class="highlighter-rouge">CAPABILITY_PAUSE</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_pause" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to pause</p>
+<h4 id="capability_stop"><code class="highlighter-rouge">CAPABILITY_STOP</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_stop" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to stop</p>
+<h4 id="capability_seek_to"><code class="highlighter-rouge">CAPABILITY_SEEK_TO</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_seek_to" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to seek to a position in the timeline</p>
+<h4 id="capability_skip"><code class="highlighter-rouge">CAPABILITY_SKIP</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_skip" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to skip to any song in the queue</p>
+<h4 id="capability_skip_to_next"><code class="highlighter-rouge">CAPABILITY_SKIP_TO_NEXT</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_skip_to_next" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to skip to the next track</p>
+<h4 id="capability_skip_to_previous"><code class="highlighter-rouge">CAPABILITY_SKIP_TO_PREVIOUS</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_skip_to_previous" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to skip to the previous track</p>
+<h4 id="capability_set_rating"><code class="highlighter-rouge">CAPABILITY_SET_RATING</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_set_rating" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to set the rating value based on the rating type</p>
+<h4 id="capability_jump_forward"><code class="highlighter-rouge">CAPABILITY_JUMP_FORWARD</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_jump_forward" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to jump forward by the amount of seconds specified in the options</p>
+<h4 id="capability_jump_backward"><code class="highlighter-rouge">CAPABILITY_JUMP_BACKWARD</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability_jump_backward" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Capability indicating the ability to jump backward by the amount of seconds specified in the options</p>
+
+<h3 id="pitch-algorithm">Pitch Algorithm<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#pitch-algorithm" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<h4 id="pitch_algorithm_linear"><code class="highlighter-rouge">PITCH_ALGORITHM_LINEAR</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#pitch_algorithm_linear" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>An algorithm suitable for general use.</p>
+<h4 id="pitch_algorithm_music"><code class="highlighter-rouge">PITCH_ALGORITHM_MUSIC</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#pitch_algorithm_music" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>An algorithm suitable for music.</p>
+<h4 id="pitch_algorithm_voice"><code class="highlighter-rouge">PITCH_ALGORITHM_VOICE</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#pitch_algorithm_voice" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>An algorithm suitable for voice.</p>
+
+<h2 id="functions">Functions<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#functions" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<h3 id="lifecycle-functions">Lifecycle Functions<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#lifecycle-functions" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<h4 id="setupplayeroptions"><code class="highlighter-rouge">setupPlayer(options)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#setupplayeroptions" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Initializes the player with the specified options. These options do not apply to all platforms, see chart below.</p>
+
+<p>These options are different than the ones set using <code class="highlighter-rouge">updateOptions()</code>. Options other than those listed below will not be applied.</p>
+
+<p>You should always call this function (even without any options set) before using the player to make sure everything is initialized.</p>
+
+<p>If the player is already initialized, the promise will resolve instantly.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+      <th style="text-align: center">Android</th>
+      <th style="text-align: center">iOS</th>
+      <th style="text-align: center">Windows</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>options</td>
+      <td><code class="highlighter-rouge">object</code></td>
+      <td>The options</td>
+      <td>&nbsp;</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>options.minBuffer</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>Minimum time in seconds that needs to be buffered</td>
+      <td>15</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.maxBuffer</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>Maximum time in seconds that needs to be buffered</td>
+      <td>50</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.playBuffer</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>Minimum time in seconds that needs to be buffered to start playing</td>
+      <td>2.5</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.backBuffer</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>Time in seconds that should be kept in the buffer behind the current playhead time.</td>
+      <td>0</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.maxCacheSize</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>Maximum cache size in kilobytes</td>
+      <td>0</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.iosCategory</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td><a href="https://developer.apple.com/documentation/avfoundation/avaudiosession/1616615-category">AVAudioSession.Category</a> for iOS. Sets on <code class="highlighter-rouge">play()</code></td>
+      <td><code class="highlighter-rouge">playback</code></td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.iosCategoryOptions</td>
+      <td><code class="highlighter-rouge">array</code></td>
+      <td><a href="https://developer.apple.com/documentation/avfoundation/avaudiosession/1616503-categoryoptions">AVAudioSession.CategoryOptions</a> for iOS. Sets on <code class="highlighter-rouge">play()</code></td>
+      <td><code class="highlighter-rouge">[]</code></td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.iosCategoryMode</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td><a href="https://developer.apple.com/documentation/avfoundation/avaudiosession/1616508-mode">AVAudioSession.Mode</a> for iOS. Sets on <code class="highlighter-rouge">play()</code></td>
+      <td><code class="highlighter-rouge">default</code></td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="destroy"><code class="highlighter-rouge">destroy()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#destroy" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Destroys the player, cleaning up its resources. After executing this function, you won’t be able to use the player anymore, unless you call <code class="highlighter-rouge">setupPlayer()</code> again.</p>
+
+<h4 id="registerplaybackserviceserviceprovider"><code class="highlighter-rouge">registerPlaybackService(serviceProvider)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#registerplaybackserviceserviceprovider" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Register the playback service. The service will run as long as the player runs.</p>
+
+<p>This function should only be called once, and should be registered right after registering your React application with <code class="highlighter-rouge">AppRegistry</code>.</p>
+
+<p>You should use the playback service to register the event handlers that must be directly tied to the player, as the playback service might keep running when the app is in background.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>serviceProvider</td>
+      <td><code class="highlighter-rouge">function</code></td>
+      <td>The function that must return an async service function.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="addeventlistenerevent-listener"><code class="highlighter-rouge">addEventListener(event, listener)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#addeventlistenerevent-listener" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Adds a new event listener.</p>
+
+<p>You can find a list of events in the <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#events">events section</a>.</p>
+
+<p>This function returns an event subscription instance that can be stored and removed after by executing <code class="highlighter-rouge">remove()</code>.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">EmitterSubscription</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>event</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The event name</td>
+    </tr>
+    <tr>
+      <td>listener</td>
+      <td><code class="highlighter-rouge">function(data)</code></td>
+      <td>The listener function</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="registereventhandlerhandler"><code class="highlighter-rouge">registerEventHandler(handler)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#registereventhandlerhandler" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p><strong>DEPRECATED</strong>: Use registerPlaybackService and addEventListener instead.</p>
+
+<p>Registers an event handler. This function should only be called once, and should be registered right after registering your React application with <code class="highlighter-rouge">AppRegistry</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handler</td>
+      <td><code class="highlighter-rouge">function</code></td>
+      <td>The function that acts as an event handler</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="queue-functions">Queue Functions<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#queue-functions" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<h4 id="addtracks-insertbeforeid"><code class="highlighter-rouge">add(tracks, insertBeforeId)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#addtracks-insertbeforeid" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Adds one or more tracks to the queue.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tracks</td>
+      <td><code class="highlighter-rouge">array</code> of <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#track-object">Track Object</a> or a single one</td>
+      <td>The tracks that will be added</td>
+    </tr>
+    <tr>
+      <td>insertBeforeId</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The ID of the track that will be located immediately after the inserted tracks. Set it to <code class="highlighter-rouge">null</code> to add it at the end of the queue</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="removetracks"><code class="highlighter-rouge">remove(tracks)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#removetracks" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Removes one or more tracks from the queue.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tracks</td>
+      <td><code class="highlighter-rouge">array</code> of track ids or a single one</td>
+      <td>The tracks that will be removed</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="skipid"><code class="highlighter-rouge">skip(id)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#skipid" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Skips to a track in the queue.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track id</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="skiptonext"><code class="highlighter-rouge">skipToNext()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#skiptonext" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Skips to the next track in the queue.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise</code></p>
+
+<h4 id="skiptoprevious"><code class="highlighter-rouge">skipToPrevious()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#skiptoprevious" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Skips to the previous track in the queue.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise</code></p>
+
+<h4 id="reset"><code class="highlighter-rouge">reset()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#reset" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Resets the player stopping the current track and clearing the queue.</p>
+
+<h4 id="gettrackid"><code class="highlighter-rouge">getTrack(id)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#gettrackid" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Gets a track object from the queue.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise&lt;</code>Object as described in <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#track-object">Track Object</a><code class="highlighter-rouge">&gt;</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="getcurrenttrack"><code class="highlighter-rouge">getCurrentTrack()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#getcurrenttrack" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Gets the id of the current track</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise&lt;string&gt;</code></p>
+
+<h4 id="getqueue"><code class="highlighter-rouge">getQueue()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#getqueue" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Gets the whole queue</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise&lt;Array&lt;</code>Object as described in <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#track-object">Track Object</a><code class="highlighter-rouge">&gt;&gt;</code></p>
+
+<h4 id="removeupcomingtracks"><code class="highlighter-rouge">removeUpcomingTracks()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#removeupcomingtracks" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Clears any upcoming tracks from the queue.</p>
+
+<h4 id="updatemetadatafortrackid-metadata"><code class="highlighter-rouge">updateMetadataForTrack(id, metadata)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#updatemetadatafortrackid-metadata" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Updates the metadata of a track in the queue.
+If the current track is updated, the notification and the Now Playing Center will be updated accordingly.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track ID</td>
+    </tr>
+    <tr>
+      <td>metadata</td>
+      <td><code class="highlighter-rouge">object</code></td>
+      <td>A subset of the <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#track-object">Track Object</a> with only the <code class="highlighter-rouge">artwork</code>, <code class="highlighter-rouge">title</code>, <code class="highlighter-rouge">artist</code>, <code class="highlighter-rouge">album</code>, <code class="highlighter-rouge">description</code>, <code class="highlighter-rouge">genre</code>, <code class="highlighter-rouge">date</code>, <code class="highlighter-rouge">rating</code> and <code class="highlighter-rouge">duration</code> properties.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="player-functions">Player Functions<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#player-functions" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<h4 id="updateoptionsoptions"><code class="highlighter-rouge">updateOptions(options)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#updateoptionsoptions" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Updates the configuration for the components.</p>
+
+<p>All parameters are optional. You also only need to specify the ones you want to update.</p>
+
+<p>These parameters are different than the ones set using <code class="highlighter-rouge">setupPlayer()</code>. Parameters other than those listed below will not be applied.</p>
+
+<p>Some parameters are unused depending on platform.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th style="text-align: center">Android</th>
+      <th style="text-align: center">iOS</th>
+      <th style="text-align: center">Windows</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>options</td>
+      <td><code class="highlighter-rouge">object</code></td>
+      <td>The options</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>options.ratingType</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating">Rating Constant</a></td>
+      <td>The rating type</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.jumpInterval</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The interval in seconds for the jump forward/backward buttons</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✓</td>
+    </tr>
+    <tr>
+      <td>options.stopWithApp</td>
+      <td><code class="highlighter-rouge">boolean</code></td>
+      <td>Whether the player will be destroyed when the app closes</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.alwaysPauseOnInterruption</td>
+      <td><code class="highlighter-rouge">boolean</code></td>
+      <td>Whether the <code class="highlighter-rouge">remote-duck</code> event will be triggered on every interruption</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.capabilities</td>
+      <td><code class="highlighter-rouge">array</code> of <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability">Capability Constants</a></td>
+      <td>The media controls that will be enabled</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✓</td>
+    </tr>
+    <tr>
+      <td>options.notificationCapabilities</td>
+      <td><code class="highlighter-rouge">array</code> of <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability">Capability Constants</a></td>
+      <td>The buttons that it will show in the notification. Defaults to <code class="highlighter-rouge">data.capabilities</code></td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.compactCapabilities</td>
+      <td><code class="highlighter-rouge">array</code> of <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#capability">Capability Constants</a></td>
+      <td>The buttons that it will show in the compact notification</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.icon</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The notification icon</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.playIcon</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The play icon</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.pauseIcon</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The pause icon</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.stopIcon</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The stop icon</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.previousIcon</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The previous icon</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.nextIcon</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The next icon</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.rewindIcon</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The jump backward icon</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.forwardIcon</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The jump forward icon</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+    <tr>
+      <td>options.color</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The notification color in an ARGB hex</td>
+      <td style="text-align: center">✓</td>
+      <td style="text-align: center">✗</td>
+      <td style="text-align: center">✗</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="play"><code class="highlighter-rouge">play()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#play" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Plays or resumes the current track.</p>
+
+<h4 id="pause"><code class="highlighter-rouge">pause()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#pause" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Pauses the current track.</p>
+
+<h4 id="stop"><code class="highlighter-rouge">stop()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#stop" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Stops the current track.</p>
+
+<h4 id="seektoseconds"><code class="highlighter-rouge">seekTo(seconds)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#seektoseconds" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Seeks to a specified time position in the current track.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>seconds</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The position in seconds</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="setvolumevolume"><code class="highlighter-rouge">setVolume(volume)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#setvolumevolume" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Sets the volume of the player.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>volume</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The volume in a range from 0 to 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="getvolume"><code class="highlighter-rouge">getVolume()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#getvolume" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Gets the volume of the player (a number between 0 and 1).</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise&lt;number&gt;</code></p>
+
+<h4 id="setraterate"><code class="highlighter-rouge">setRate(rate)</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#setraterate" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Sets the playback rate</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rate</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The playback rate where 1 is the regular speed</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="getrate"><code class="highlighter-rouge">getRate()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#getrate" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Gets the playback rate, where 1 is the regular speed.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise&lt;number&gt;</code></p>
+
+<h4 id="getduration"><code class="highlighter-rouge">getDuration()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#getduration" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Gets the duration of the current track in seconds.</p>
+
+<p>Note: <code class="highlighter-rouge">react-native-track-player</code> is a streaming library, which means it slowly buffers the track and doesn’t know exactly when it ends.
+The duration returned by this function is determined through various tricks and <em>may not be exact or may not be available at all</em>.
+We highly recommend you to retrieve the duration from a database and feed it to the <code class="highlighter-rouge">duration</code> parameter in the <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#track-object">Track Object</a>.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise&lt;number&gt;</code></p>
+
+<h4 id="getposition"><code class="highlighter-rouge">getPosition()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#getposition" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Gets the position of the player in seconds.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise&lt;number&gt;</code></p>
+
+<h4 id="getbufferedposition"><code class="highlighter-rouge">getBufferedPosition()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#getbufferedposition" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Gets the buffered position of the player in seconds.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise&lt;number&gt;</code></p>
+
+<h4 id="getstate"><code class="highlighter-rouge">getState()</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#getstate" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Gets the state of the player.</p>
+
+<p><strong>Returns:</strong> <code class="highlighter-rouge">Promise&lt;</code><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#state">State Constant</a><code class="highlighter-rouge">&gt;</code></p>
+
+<h2 id="events">Events<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#events" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>All event types are made available through the named export <code class="highlighter-rouge">TrackPlayerEventTypes</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">TrackPlayerEventTypes</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'react-native-track-player'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="media-controls">Media Controls<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#media-controls" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<h4 id="remote-play"><code class="highlighter-rouge">remote-play</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-play" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user presses the play button. Only fired if the <code class="highlighter-rouge">CAPABILITY_PLAY</code> is allowed.</p>
+
+<h4 id="remote-play-id"><code class="highlighter-rouge">remote-play-id</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-play-id" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user selects a track from an external device. Required for Android Auto support. Only fired if the <code class="highlighter-rouge">CAPABILITY_PLAY_FROM_ID</code> is allowed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track id</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="remote-play-search"><code class="highlighter-rouge">remote-play-search</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-play-search" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user searches for a track (usually voice search). Required for Android Auto support. Only fired if the <code class="highlighter-rouge">CAPABILITY_PLAY_FROM_SEARCH</code> is allowed.</p>
+
+<p>Every parameter except <code class="highlighter-rouge">query</code> is optional and may not be provided.
+In the case where <code class="highlighter-rouge">query</code> is empty, feel free to select any track to play.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>query</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The search query</td>
+    </tr>
+    <tr>
+      <td>focus</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The focus of the search. One of <code class="highlighter-rouge">artist</code>, <code class="highlighter-rouge">album</code>, <code class="highlighter-rouge">playlist</code> or <code class="highlighter-rouge">genre</code></td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track title</td>
+    </tr>
+    <tr>
+      <td>artist</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track artist</td>
+    </tr>
+    <tr>
+      <td>album</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track album</td>
+    </tr>
+    <tr>
+      <td>genre</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track genre</td>
+    </tr>
+    <tr>
+      <td>playlist</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track playlist</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="remote-pause"><code class="highlighter-rouge">remote-pause</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-pause" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user presses the pause button. Only fired if the <code class="highlighter-rouge">CAPABILITY_PAUSE</code> is allowed or if there’s a change in outputs (e.g.: headphone disconnected).</p>
+
+<h4 id="remote-stop"><code class="highlighter-rouge">remote-stop</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-stop" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user presses the stop button. Only fired if the <code class="highlighter-rouge">CAPABILITY_STOP</code> is allowed.</p>
+
+<h4 id="remote-skip"><code class="highlighter-rouge">remote-skip</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-skip" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user skips to a track in the queue. Only fired if the <code class="highlighter-rouge">CAPABILITY_SKIP</code> is allowed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track id</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="remote-next"><code class="highlighter-rouge">remote-next</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-next" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user presses the next track button. Only fired if the <code class="highlighter-rouge">CAPABILITY_SKIP_TO_NEXT</code> is allowed.</p>
+
+<h4 id="remote-previous"><code class="highlighter-rouge">remote-previous</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-previous" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user presses the previous track button. Only fired if the <code class="highlighter-rouge">CAPABILITY_SKIP_TO_PREVIOUS</code> is allowed.</p>
+
+<h4 id="remote-seek"><code class="highlighter-rouge">remote-seek</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-seek" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user changes the position of the timeline. Only fired if the <code class="highlighter-rouge">CAPABILITY_SEEK_TO</code> is allowed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>position</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The position in seconds</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="remote-set-rating"><code class="highlighter-rouge">remote-set-rating</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-set-rating" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user changes the rating for the track. Only fired if the <code class="highlighter-rouge">CAPABILITY_SET_RATING</code> is allowed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rating</td>
+      <td>Depends on the <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating">Rating Type</a></td>
+      <td>The rating that was set</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="remote-jump-forward"><code class="highlighter-rouge">remote-jump-forward</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-jump-forward" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user presses the jump forward button. Only fired if the <code class="highlighter-rouge">CAPABILITY_JUMP_FORWARD</code> is allowed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>interval</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The number of seconds to jump forward. It’s usually the <code class="highlighter-rouge">jumpInterval</code> set in the options.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="remote-jump-backward"><code class="highlighter-rouge">remote-jump-backward</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-jump-backward" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the user presses the jump backward button. Only fired if the <code class="highlighter-rouge">CAPABILITY_JUMP_BACKWARD</code> is allowed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>interval</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The number of seconds to jump backward. It’s usually the <code class="highlighter-rouge">jumpInterval</code> set in the options.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="remote-duck"><code class="highlighter-rouge">remote-duck</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#remote-duck" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the device needs the player to pause for a interruption.</p>
+
+<p>The volume may also be lowered on an transient interruption without triggering this event.
+If you want to receive those interruptions, set the <code class="highlighter-rouge">alwaysPauseOnInterruption</code> option to true.</p>
+
+<ul>
+  <li>When the event is triggered with <code class="highlighter-rouge">permanent</code> set to true, you should stop the playback.</li>
+  <li>When the event is triggered with <code class="highlighter-rouge">paused</code> set to true, you should pause the playback. It will also be set to true when <code class="highlighter-rouge">permanent</code> is true.</li>
+  <li>When the event is triggered and none of them are set to true, you should resume the track.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>paused</td>
+      <td><code class="highlighter-rouge">boolean</code></td>
+      <td>Whether the player should pause the playback</td>
+    </tr>
+    <tr>
+      <td>permanent</td>
+      <td><code class="highlighter-rouge">boolean</code></td>
+      <td>Whether the player should stop the playback</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="player">Player<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#player" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<h4 id="playback-state"><code class="highlighter-rouge">playback-state</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#playback-state" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the state of the player changes.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>state</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#state">State Constant</a></td>
+      <td>The new state</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="playback-track-changed"><code class="highlighter-rouge">playback-track-changed</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#playback-track-changed" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when a track is changed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>track</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The previous track id. Might be null</td>
+    </tr>
+    <tr>
+      <td>position</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The previous track position in seconds</td>
+    </tr>
+    <tr>
+      <td>nextTrack</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The next track id. Might be null</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="playback-queue-ended"><code class="highlighter-rouge">playback-queue-ended</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#playback-queue-ended" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the queue reaches the end.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>track</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The previous track id. Might be null</td>
+    </tr>
+    <tr>
+      <td>position</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The previous track position in seconds</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="playback-metadata-received"><code class="highlighter-rouge">playback-metadata-received</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#playback-metadata-received" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when the current track receives metadata encoded in. (e.g. ID3 tags or Icy Metadata).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>source</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The metadata source (<code class="highlighter-rouge">id3</code>, <code class="highlighter-rouge">icy</code> or <code class="highlighter-rouge">icy-headers</code>)</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track title. Might be null</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track url. Might be null</td>
+    </tr>
+    <tr>
+      <td>artist</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track artist. Might be null</td>
+    </tr>
+    <tr>
+      <td>album</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track album. Might be null</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track date. Might be null</td>
+    </tr>
+    <tr>
+      <td>genre</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track genre. Might be null</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="playback-error"><code class="highlighter-rouge">playback-error</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#playback-error" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Fired when an error occurs.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>code</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The error code</td>
+    </tr>
+    <tr>
+      <td>message</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The error message</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="components">Components<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#components" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<h4 id="progresscomponent"><code class="highlighter-rouge">ProgressComponent</code><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#progresscomponent" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>A component base that updates itself every second with a new position. Your app should extend it with a custom render.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>position</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The current position in seconds</td>
+    </tr>
+    <tr>
+      <td>bufferedPosition</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The buffered position in seconds</td>
+    </tr>
+    <tr>
+      <td>duration</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The duration in seconds</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Functions</th>
+      <th>Return Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>getProgress</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The current progress expressed between 0 and 1</td>
+    </tr>
+    <tr>
+      <td>getBufferedProgress</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The buffered progress expressed between 0 and 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="objects">Objects<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#objects" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<h3 id="track-object">Track Object<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#track-object" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p>Tracks in the player queue are plain javascript objects as described below.</p>
+
+<p>Only the <code class="highlighter-rouge">id</code>, <code class="highlighter-rouge">url</code>, <code class="highlighter-rouge">title</code> and <code class="highlighter-rouge">artist</code> properties are required for basic playback</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track id</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td><code class="highlighter-rouge">string</code> or <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The media URL</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>Stream type. One of <code class="highlighter-rouge">dash</code>, <code class="highlighter-rouge">hls</code>, <code class="highlighter-rouge">smoothstreaming</code> or <code class="highlighter-rouge">default</code></td>
+    </tr>
+    <tr>
+      <td>userAgent</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The user agent HTTP header</td>
+    </tr>
+    <tr>
+      <td>contentType</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>Mime type of the media file</td>
+    </tr>
+    <tr>
+      <td>duration</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The duration in seconds</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track title</td>
+    </tr>
+    <tr>
+      <td>artist</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track artist</td>
+    </tr>
+    <tr>
+      <td>album</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track album</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track description</td>
+    </tr>
+    <tr>
+      <td>genre</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track genre</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>The track release date in <a href="https://www.ietf.org/rfc/rfc3339.txt">RFC 3339</a></td>
+    </tr>
+    <tr>
+      <td>rating</td>
+      <td>Depends on the <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#rating">rating type</a></td>
+      <td>The track rating value</td>
+    </tr>
+    <tr>
+      <td>artwork</td>
+      <td><code class="highlighter-rouge">string</code> or <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object">Resource Object</a></td>
+      <td>The artwork url</td>
+    </tr>
+    <tr>
+      <td>pitchAlgorithm</td>
+      <td><a href="https://react-native-kit.github.io/react-native-track-player/documentation/#pitch-algorithm">Pitch Algorithm</a></td>
+      <td>The pitch algorithm</td>
+    </tr>
+    <tr>
+      <td>headers</td>
+      <td><code class="highlighter-rouge">object</code></td>
+      <td>An object containing all the headers to use in the HTTP request</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="resource-object">Resource Object<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#resource-object" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p>Resource objects are the result of <code class="highlighter-rouge">require</code>/<code class="highlighter-rouge">import</code> for files.</p>
+
+<p>For more information about Resource Objects, read the <a href="https://facebook.github.io/react-native/docs/images.html">Images</a> section of the React Native documentation</p>
+
+<h2 id="react-hooks">React Hooks<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#react-hooks" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>React v16.8 introduced <a href="https://reactjs.org/docs/hooks-intro.html">hooks</a>. If you are using a version of React Native that is before <a href="https://facebook.github.io/react-native/blog/2019/03/12/releasing-react-native-059">v0.59.0</a>, your React Native version does not support hooks.</p>
+
+<h4 id="usetrackplayerevents">useTrackPlayerEvents<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#usetrackplayerevents" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>Register an event listener for one or more of the <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#events">events</a> emitted by the TrackPlayer. The subscription is removed when the component unmounts.</p>
+
+<p>Check out the <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#events">events section</a> for a full list of supported events.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Text</span><span class="p">,</span> <span class="nx">View</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'react-native'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">useTrackPlayerEvent</span><span class="p">,</span> <span class="nx">TrackPlayerEvents</span><span class="p">,</span> <span class="nx">STATE_PLAYING</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'react-native-track-player'</span><span class="p">;</span>
+
+<span class="c1">// Subscribing to the following events inside MyComponent</span>
+<span class="kd">const</span> <span class="nx">events</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="nx">TrackPlayerEvents</span><span class="p">.</span><span class="nx">PLAYBACK_STATE</span><span class="p">,</span>
+  <span class="nx">TrackPlayerEvents</span><span class="p">.</span><span class="nx">PLAYBACK_ERROR</span>
+<span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">MyComponent</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">playerState</span><span class="p">,</span> <span class="nx">setState</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+
+  <span class="nx">useTrackPlayerEvents</span><span class="p">(</span><span class="nx">events</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="nx">TrackPlayerEvents</span><span class="p">.</span><span class="nx">PLAYBACK_ERROR</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s1">'An error occured while playing the current track.'</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="nx">TrackPlayerEvents</span><span class="p">.</span><span class="nx">PLAYBACK_STATE</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">setState</span><span class="p">(</span><span class="nx">playbackState</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+
+  <span class="kd">const</span> <span class="nx">isPlaying</span> <span class="o">=</span> <span class="nx">playerState</span> <span class="o">===</span> <span class="nx">STATE_PLAYING</span><span class="p">;</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nc">View</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nc">Text</span><span class="p">&gt;</span>The TrackPlayer is <span class="si">{</span><span class="nx">isPlaying</span> <span class="p">?</span> <span class="s1">'playing'</span> <span class="p">:</span> <span class="s1">'not playing'</span><span class="si">}</span><span class="p">&lt;/</span><span class="nc">Text</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nc">View</span><span class="p">&gt;</span>
+  <span class="p">);</span> 
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h4 id="usetrackplayerprogress">useTrackPlayerProgress<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="https://react-native-kit.github.io/react-native-track-player/documentation/#usetrackplayerprogress" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p>A hook alternative to the <a href="https://react-native-kit.github.io/react-native-track-player/documentation/#progresscomponent">Progress Component</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>position</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The current position in seconds</td>
+    </tr>
+    <tr>
+      <td>bufferedPosition</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The buffered position in seconds</td>
+    </tr>
+    <tr>
+      <td>duration</td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The duration in seconds</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="highlighter-rouge">useTrackPlayerProgress</code> accepts an interval to set the rate (in miliseconds) to poll the track player’s progress. The default value is <code class="highlighter-rouge">1000</code> or every second.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Text</span><span class="p">,</span> <span class="nx">View</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'react-native'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">useTrackPlayerProgress</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'react-native-track-player'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">MyComponent</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">position</span><span class="p">,</span> <span class="nx">bufferedPosition</span><span class="p">,</span> <span class="nx">duration</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useTrackPlayerProgress</span><span class="p">()</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nc">View</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nc">Text</span><span class="p">&gt;</span>Track progress: <span class="si">{</span><span class="nx">position</span><span class="si">}</span> seconds out of <span class="si">{</span><span class="nx">duration</span><span class="si">}</span> total<span class="p">&lt;/</span><span class="nc">Text</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nc">Text</span><span class="p">&gt;</span>Buffered progress: <span class="si">{</span><span class="nx">bufferedPosition</span><span class="si">}</span> seconds buffered out of <span class="si">{</span><span class="nx">duration</span><span class="si">}</span> total<span class="p">&lt;/</span><span class="nc">Text</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nc">View</span><span class="p">&gt;</span>
+  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+            <hr>
+            <div class="info">
+                <p id="last-edit">Last updated on Sat Jun 29 2019</p>
+                <p class="buttons">
+                    <a href="https://github.com/react-native-kit/react-native-track-player/issues">Issues / Questions</a>
+                    <a href="https://github.com/react-native-kit/react-native-track-player/edit/dev/docs/Documentation.md">Improve this page</a>
+                </p>
+            </div>
+        </section>
+        <div id="footer">
+            <div>
+                <ul>
+                    
+                        <li><a href="https://react-native-kit.github.io/react-native-track-player/install/">Installation</a></li>
+                    
+                        <li><a href="https://react-native-kit.github.io/react-native-track-player/api/">Getting Started</a></li>
+                    
+                        <li><a href="https://react-native-kit.github.io/react-native-track-player/documentation/">Documentation</a></li>
+                    
+                        <li><a href="https://react-native-kit.github.io/react-native-track-player/platform-support/">Platform Support</a></li>
+                    
+                        <li><a href="https://react-native-kit.github.io/react-native-track-player/background/">Background Mode</a></li>
+                    
+                        <li><a href="https://react-native-kit.github.io/react-native-track-player/build-preferences/">Build Preferences</a></li>
+                    
+                        <li><a href="https://react-native-kit.github.io/react-native-track-player/amazon-fireos-support/">FireOS Support</a></li>
+                    
+                        <li><a href="https://github.com/react-native-kit/react-native-track-player">GitHub</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./Documentation _ react-native-track-player_files/anchor.js"></script>
+        <script type="text/javascript">
+            (function () {
+                'use strict';
+                anchors.options.placement = 'right';
+                anchors.add('h2, h3, h4, h5, h6');
+
+                const currentPage = encodeURIComponent("Documentation.md");
+
+                fetch('https://api.github.com/repos/react-native-kit/react-native-track-player/commits/master?path=docs/' + currentPage)
+                    .then(res => res.json())
+                    .then(json => {
+                        const container = document.getElementById('last-edit');
+                        const dt = new Date(json.commit.author.date);
+
+                        container.appendChild(document.createTextNode('Last updated on ' + dt.toDateString()));
+                    });
+            })();
+        </script>
+    
+</body></html>

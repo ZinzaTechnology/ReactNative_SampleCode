@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "341845114998",
+    "firebase_url": "https://openroad-b13be.firebaseio.com",
+    "project_id": "openroad-b13be",
+    "storage_bucket": "openroad-b13be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341845114998:android:cbb06c5d59f75e345fdf57",
+        "android_client_info": {
+          "package_name": "com.openroad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341845114998-99kigeeusdpi5eu8uq5v5b67m3ivqffr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqbC14C4ySSNFXmmCMhElTF0pJkdWJEmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341845114998-99kigeeusdpi5eu8uq5v5b67m3ivqffr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "341845114998-bpgre78h8o59h2s03573nj4idtallfk5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.awsome.app.openroad"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
